@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphTweets_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphTweets/graphTweets_{{ version }}.tar.gz
-  sha256: 8b52e4c89d5c23b67050271342f2a76afaada0589d7db6421efae174ed9e05c9
+  sha256: 93c28859eadb5e80c79bccfa9419bc4fccf0c71965f832161a0361a77d69e988
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
