@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/graphTweets_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/graphTweets/graphTweets_{{ version }}.tar.gz
-  sha256: a016ba597853f68c650213ed2ffc6dcb4ae225518299f75b2b76c8d196723fe6
+  sha256: 07f8f435150ec5185e6144e3ddf993062e4340ff763a23dbf20f6f4e1915c549
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -53,6 +53,7 @@ test:
 about:
   home: http://graphTweets.john-coene.com
   license: MIT
+  license_file: LICENSE
   summary: Allows building an edge table from data frame of tweets,  also provides function to
     build nodes and another create a temporal graph.
   license_family: MIT
