@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Allows building an edge table from data frame of tweets,  also provides function to build nodes and another create a temporal graph.
+Summary: Allows building an edge table from data frame of tweets, also provides function to build nodes and another create a temporal graph.
 
 
 
